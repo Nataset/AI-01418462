@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Age(18-36) <= 0.655\ngini = 0.202\nsamples = 70\nvalue = [8, 62]\nclass = 1", fillcolor="#53aae8"] ;
+1 [label="gini = 0.0\nsamples = 31\nvalue = [0, 31]\nclass = 1", fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Season <= 0.665\ngini = 0.326\nsamples = 39\nvalue = [8, 31]\nclass = 1", fillcolor="#6cb6ec"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="Hours sitting(0-16) <= 0.125\ngini = 0.185\nsamples = 29\nvalue = [3, 26]\nclass = 1", fillcolor="#50a8e8"] ;
+2 -> 3 ;
+4 [label="gini = 0.5\nsamples = 2\nvalue = [1, 1]\nclass = 0", fillcolor="#ffffff"] ;
+3 -> 4 ;
+5 [label="gini = 0.137\nsamples = 27\nvalue = [2, 25]\nclass = 1", fillcolor="#49a5e7"] ;
+3 -> 5 ;
+6 [label="Hours sitting(0-16) <= 0.315\ngini = 0.5\nsamples = 10\nvalue = [5, 5]\nclass = 0", fillcolor="#ffffff"] ;
+2 -> 6 ;
+7 [label="gini = 0.278\nsamples = 6\nvalue = [1, 5]\nclass = 1", fillcolor="#61b1ea"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = 0", fillcolor="#e58139"] ;
+6 -> 8 ;
+}
